@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibit 1 - The Starry Canvas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content-wrapper">
+            <header class="page-header">
+                <a href="exhibition-index.html" class="back-link">← Back to Index</a>
+                <div class="exhibit-header">
+                    <span class="exhibit-number-badge">Exhibit 01</span>
+                    <h1>The Starry Canvas</h1>
+                </div>
+            </header>
+            
+            <div class="exhibit-content">
+                <div class="exhibit-image-placeholder">
+                    <div class="image-icon">🎨</div>
+                    <p class="image-caption">Post-Impressionist Masterpiece</p>
+                </div>
+                
+                <div class="audio-section">
+                    <div class="audio-player">
+                        <button class="play-btn" id="exhibitPlayBtn">▶</button>
+                        <span class="audio-label">Listen to Audio Description</span>
+                        <span class="audio-duration">3:45</span>
+                    </div>
+                    <audio id="exhibitAudio" src="audio/exhibit1.mp3"></audio>
+                </div>
+                
+                <div class="exhibit-details">
+                    <div class="detail-section">
+                        <h3>About This Work</h3>
+                        <p>
+                            This remarkable post-impressionist painting captures the swirling energy of the night sky. 
+                            The artist's bold brushstrokes and vibrant blues create a sense of movement and emotion 
+                            that transcends the simple representation of a starry night.
+                        </p>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h3>Historical Context</h3>
+                        <p>
+                            Created during a period of intense artistic innovation, this work represents a departure 
+                            from traditional landscape painting. The artist sought to express the emotional and 
+                            spiritual dimensions of the natural world rather than merely reproduce its appearance.
+                        </p>
+                    </div>
+                    
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <strong>Period:</strong> Late 19th Century
+                        </div>
+                        <div class="info-item">
+                            <strong>Medium:</strong> Oil on Canvas
+                        </div>
+                        <div class="info-item">
+                            <strong>Style:</strong> Post-Impressionism
+                        </div>
+                        <div class="info-item">
+                            <strong>Dimensions:</strong> 73.7 × 92.1 cm
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="navigation-footer">
+                <a href="exhibition-index.html" class="btn-secondary">Back to Index</a>
+                <a href="exhibit2.html" class="btn-primary">Next Exhibit →</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="audio-player.js"></script>
+</body>
+</html>

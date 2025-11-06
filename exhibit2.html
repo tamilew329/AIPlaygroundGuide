@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibit 2 - Ancient Sculpture</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content-wrapper">
+            <header class="page-header">
+                <a href="exhibition-index.html" class="back-link">← Back to Index</a>
+                <div class="exhibit-header">
+                    <span class="exhibit-number-badge">Exhibit 02</span>
+                    <h1>Ancient Sculpture</h1>
+                </div>
+            </header>
+            
+            <div class="exhibit-content">
+                <div class="exhibit-image-placeholder">
+                    <div class="image-icon">🗿</div>
+                    <p class="image-caption">Hellenistic Period Sculpture</p>
+                </div>
+                
+                <div class="audio-section">
+                    <div class="audio-player">
+                        <button class="play-btn" id="exhibitPlayBtn">▶</button>
+                        <span class="audio-label">Listen to Audio Description</span>
+                        <span class="audio-duration">4:12</span>
+                    </div>
+                    <audio id="exhibitAudio" src="audio/exhibit2.mp3"></audio>
+                </div>
+                
+                <div class="exhibit-details">
+                    <div class="detail-section">
+                        <h3>About This Work</h3>
+                        <p>
+                            This magnificent sculpture exemplifies the technical mastery and artistic vision of the 
+                            Hellenistic period. The flowing drapery and dynamic pose capture a moment of movement, 
+                            frozen in marble for eternity.
+                        </p>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h3>Historical Context</h3>
+                        <p>
+                            Created during an era of great cultural exchange, this sculpture reflects the Hellenistic 
+                            emphasis on emotion and naturalism. The artist's ability to render fabric and human form 
+                            in stone remains unparalleled even by modern standards.
+                        </p>
+                    </div>
+                    
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <strong>Period:</strong> Hellenistic (323-31 BCE)
+                        </div>
+                        <div class="info-item">
+                            <strong>Medium:</strong> Marble
+                        </div>
+                        <div class="info-item">
+                            <strong>Origin:</strong> Ancient Greece
+                        </div>
+                        <div class="info-item">
+                            <strong>Height:</strong> 2.44 meters
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="navigation-footer">
+                <a href="exhibit1.html" class="btn-secondary">← Previous</a>
+                <a href="exhibition-index.html" class="btn-secondary">Index</a>
+                <a href="exhibit3.html" class="btn-primary">Next →</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="audio-player.js"></script>
+</body>
+</html>

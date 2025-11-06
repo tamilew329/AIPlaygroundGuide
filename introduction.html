@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction - Exhibition Audio Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content-wrapper">
+            <header class="page-header">
+                <a href="index.html" class="back-link">← Back</a>
+                <h1>Welcome to the Exhibition</h1>
+            </header>
+            
+            <div class="intro-content">
+                <div class="audio-section">
+                    <div class="audio-player">
+                        <button class="play-btn" id="introPlayBtn">▶</button>
+                        <span class="audio-label">Listen to Introduction</span>
+                    </div>
+                    <audio id="introAudio" src="audio/introduction.mp3"></audio>
+                </div>
+                
+                <div class="text-content">
+                    <p class="intro-text">
+                        Welcome to our carefully curated exhibition. This audio guide will take you through 
+                        six remarkable pieces, each with its own story and significance.
+                    </p>
+                    
+                    <p class="intro-text">
+                        As you explore, you'll discover the context, history, and artistic techniques behind 
+                        each work. Take your time to appreciate the details and let the audio descriptions 
+                        enhance your experience.
+                    </p>
+                    
+                    <div class="info-box">
+                        <h3>📱 How to Use This Guide</h3>
+                        <ul>
+                            <li>Navigate through the exhibition at your own pace</li>
+                            <li>Click the play button to hear audio descriptions</li>
+                            <li>Use the index to jump to any exhibit</li>
+                            <li>Enjoy the journey!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="navigation-footer">
+                <a href="exhibition-index.html" class="btn-primary">Continue to Exhibition Index</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="audio-player.js"></script>
+</body>
+</html>
