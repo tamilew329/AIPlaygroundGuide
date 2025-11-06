@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibition Audio Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page" class="page active">
+        <div class="container">
+            <div class="landing-content">
+                <h1 class="landing-title">Welcome to the Exhibition</h1>
+                <p class="landing-subtitle">An Interactive Audio Guide Experience</p>
+                <button class="btn-primary" onclick="navigateTo('introduction')">Begin Your Journey</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Introduction Page -->
+    <div id="introduction-page" class="page">
+        <div class="container">
+            <div class="page-content">
+                <h1>Introduction</h1>
+                <div class="content-text">
+                    <p>Welcome to our exhibition audio guide. This interactive experience will take you through six fascinating sections, each offering unique insights and stories.</p>
+                    <p>Navigate through the guide using the buttons below. You can listen to audio content, read detailed descriptions, and explore at your own pace.</p>
+                    <p>Click the button below to view the index and choose which section you'd like to explore first.</p>
+                </div>
+                <div class="navigation-buttons">
+                    <button class="btn-secondary" onclick="navigateTo('landing')">Back</button>
+                    <button class="btn-primary" onclick="navigateTo('index')">View Index</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Index Page -->
+    <div id="index-page" class="page">
+        <div class="container">
+            <div class="page-content">
+                <h1>Exhibition Index</h1>
+                <p class="index-subtitle">Choose a section to explore:</p>
+                <div class="index-grid">
+                    <div class="index-item" onclick="navigateTo('section1')">
+                        <div class="index-number">1</div>
+                        <h3>Section One</h3>
+                        <p>Discover the origins and historical context</p>
+                    </div>
+                    <div class="index-item" onclick="navigateTo('section2')">
+                        <div class="index-number">2</div>
+                        <h3>Section Two</h3>
+                        <p>Explore artistic movements and influences</p>
+                    </div>
+                    <div class="index-item" onclick="navigateTo('section3')">
+                        <div class="index-number">3</div>
+                        <h3>Section Three</h3>
+                        <p>Learn about key figures and their contributions</p>
+                    </div>
+                    <div class="index-item" onclick="navigateTo('section4')">
+                        <div class="index-number">4</div>
+                        <h3>Section Four</h3>
+                        <p>Understand techniques and methodologies</p>
+                    </div>
+                    <div class="index-item" onclick="navigateTo('section5')">
+                        <div class="index-number">5</div>
+                        <h3>Section Five</h3>
+                        <p>Examine contemporary interpretations</p>
+                    </div>
+                    <div class="index-item" onclick="navigateTo('section6')">
+                        <div class="index-number">6</div>
+                        <h3>Section Six</h3>
+                        <p>Reflect on impact and legacy</p>
+                    </div>
+                </div>
+                <div class="navigation-buttons">
+                    <button class="btn-secondary" onclick="navigateTo('introduction')">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Pages -->
+    <div id="section1-page" class="page">
+        <div class="container">
+            <div class="page-content">
+                <h1>Section One: Origins and Historical Context</h1>
+                <div class="audio-player">
+                    <button class="audio-btn" onclick="toggleAudio('audio1')">
+                        <span class="audio-icon">▶</span>
+                        <span class="audio-text">Play Audio Guide</span>
+                    </button>
+                    <audio id="audio1" preload="none">
+                        <!-- Audio file would be added here -->
+                        <source src="" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="content-text">
+                    <p>This section explores the origins and historical context of the exhibition theme. Here you'll discover the foundational elements that shaped the narrative we're presenting today.</p>
+                    <p>The historical timeline spans several decades, showcasing how ideas evolved and transformed over time. Each artifact tells a story, connecting the past with the present.</p>
+                </div>
+                <div class="navigation-buttons">
+                    <button class="btn-secondary" onclick="navigateTo('index')">Back to Index</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section2-page" class="page">
+        <div class="container">
+            <div class="page-content">
+                <h1>Section Two: Artistic Movements and Influences</h1>
+                <div class="audio-player">
+                    <button class="audio-btn" onclick="toggleAudio('audio2')">
+                        <span class="audio-icon">▶</span>
+                        <span class="audio-text">Play Audio Guide</span>
+                    </button>
+                    <audio id="audio2" preload="none">
+                        <source src="" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="content-text">
+                    <p>Dive into the artistic movements that influenced the works on display. This section examines the various schools of thought, styles, and creative philosophies that shaped the artists' visions.</p>
+                    <p>From classical traditions to avant-garde innovations, you'll see how different movements interacted and influenced each other, creating a rich tapestry of artistic expression.</p>
+                </div>
+                <div class="navigation-buttons">
+                    <button class="btn-secondary" onclick="navigateTo('index')">Back to Index</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section3-page" class="page">
+        <div class="container">
+            <div class="page-content">
+                <h1>Section Three: Key Figures and Contributions</h1>
+                <div class="audio-player">
+                    <button class="audio-btn" onclick="toggleAudio('audio3')">
+                        <span class="audio-icon">▶</span>
+                        <span class="audio-text">Play Audio Guide</span>
+                    </button>
+                    <audio id="audio3" preload="none">
+                        <source src="" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="content-text">
+                    <p>Meet the key figures whose contributions shaped this exhibition. Learn about their backgrounds, motivations, and the lasting impact of their work.</p>
+                    <p>Each individual brought unique perspectives and skills, contributing to a collective narrative that continues to inspire and inform contemporary practice.</p>
+                </div>
+                <div class="navigation-buttons">
+                    <button class="btn-secondary" onclick="navigateTo('index')">Back to Index</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section4-page" class="page">
+        <div class="container">
+            <div class="page-content">
+                <h1>Section Four: Techniques and Methodologies</h1>
+                <div class="audio-player">
+                    <button class="audio-btn" onclick="toggleAudio('audio4')">
+                        <span class="audio-icon">▶</span>
+                        <span class="audio-text">Play Audio Guide</span>
+                    </button>
+                    <audio id="audio4" preload="none">
+                        <source src="" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="content-text">
+                    <p>Explore the techniques and methodologies employed in creating the works featured in this exhibition. This section provides insight into the creative process and technical skills involved.</p>
+                    <p>From traditional methods to innovative approaches, discover how artists solved creative challenges and brought their visions to life.</p>
+                </div>
+                <div class="navigation-buttons">
+                    <button class="btn-secondary" onclick="navigateTo('index')">Back to Index</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section5-page" class="page">
+        <div class="container">
+            <div class="page-content">
+                <h1>Section Five: Contemporary Interpretations</h1>
+                <div class="audio-player">
+                    <button class="audio-btn" onclick="toggleAudio('audio5')">
+                        <span class="audio-icon">▶</span>
+                        <span class="audio-text">Play Audio Guide</span>
+                    </button>
+                    <audio id="audio5" preload="none">
+                        <source src="" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="content-text">
+                    <p>Examine how contemporary artists and thinkers interpret and respond to the themes presented in this exhibition. See how historical works continue to resonate in modern contexts.</p>
+                    <p>This section bridges the gap between past and present, showing how timeless themes find new expression in contemporary art and culture.</p>
+                </div>
+                <div class="navigation-buttons">
+                    <button class="btn-secondary" onclick="navigateTo('index')">Back to Index</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section6-page" class="page">
+        <div class="container">
+            <div class="page-content">
+                <h1>Section Six: Impact and Legacy</h1>
+                <div class="audio-player">
+                    <button class="audio-btn" onclick="toggleAudio('audio6')">
+                        <span class="audio-icon">▶</span>
+                        <span class="audio-text">Play Audio Guide</span>
+                    </button>
+                    <audio id="audio6" preload="none">
+                        <source src="" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="content-text">
+                    <p>Reflect on the lasting impact and legacy of the works and themes explored throughout this exhibition. Consider how these contributions continue to influence and inspire.</p>
+                    <p>This final section invites you to contemplate the broader significance of what you've experienced and how it connects to ongoing conversations in art, culture, and society.</p>
+                </div>
+                <div class="navigation-buttons">
+                    <button class="btn-secondary" onclick="navigateTo('index')">Back to Index</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
