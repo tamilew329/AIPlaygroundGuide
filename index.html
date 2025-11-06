@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Progress Monitor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Build Progress Monitor</h1>
+            <p class="subtitle">Real-time build status tracking</p>
+        </header>
+        
+        <div class="content">
+            <div class="progress-column">
+                <div class="column-header">
+                    <h2>Build Steps</h2>
+                    <span class="status-badge" id="overallStatus">Initializing...</span>
+                </div>
+                
+                <div class="build-items" id="buildItems">
+                    <!-- Build items will be added here dynamically -->
+                </div>
+                
+                <div class="controls">
+                    <button id="startBtn" class="btn btn-primary">Start Build</button>
+                    <button id="resetBtn" class="btn btn-secondary">Reset</button>
+                </div>
+            </div>
+            
+            <div class="log-column">
+                <div class="column-header">
+                    <h2>Build Log</h2>
+                    <button id="clearLogBtn" class="btn-small">Clear</button>
+                </div>
+                <div class="log-content" id="logContent">
+                    <p class="log-entry info">Waiting to start build...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
